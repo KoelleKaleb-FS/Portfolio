@@ -1,0 +1,136 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #2e3440;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+header {
+  background-color: #2563eb;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgb(37 99 235 / 0.3);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+nav {
+  background-color: #2563eb;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  font-weight: 600;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #fbbf24;
+}
+
+main {
+  max-width: 900px;
+  margin: 3rem auto 4rem;
+  background: white;
+  border-radius: 10px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+}
+
+section {
+  margin-bottom: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+}
+
+a.project-link {
+  font-weight: 600;
+  font-style: normal;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #e2e8f0;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5);
+  user-select: none;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive (optional, can be improved later) */
+@media (max-width: 700px) {
+  main {
+    padding: 1.5rem 1.5rem;
+    margin: 2rem 1rem 3rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin: 0 0.7rem;
+    font-size: 1rem;
+  }
+}
